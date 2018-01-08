@@ -17,117 +17,259 @@
     
     <style type="text/css">
     
-        html,
-        body,
-        .cover {
-            height: 100%;
-        }
+  html,
+body,
+.cover{
+    height: 100%;
+}
 
-        .navbar-trans {
-            background: rgba(0, 0, 0, 0.75);
-            border: none;
-            font-family: Helvetica, Arial, sans-serif;
-            font-style: normal;
-            font-size: 18px;
-        }
+.navbar-trans {
+    background: rgba(0, 0, 0, 0.85);
+    border: none;
+}
 
-        @font-face {
-            font-family: achilles;
-            src: url(achv2.ttf);
-        }
+#navbarNav ul li a{
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-size: 18px;
+}
 
-        .navbar a span{
-            font-family: achilles;
-            text-transform: uppercase;
-            font-size: 30px;
-        }
+#navbarNav ul li a:hover{
+    color: limegreen;
+}
 
-        @keyframes coverDescend {
-            from { padding: 0; }
-            to   { padding: 40% 0 0 0; }
-        }
+@font-face {
+    font-family: achilles;
+    src: url(/lib/fonts/achv2.ttf);
+}
 
-        .cover {
-            background: url('cover.jpg') top left no-repeat;
-            background-size: cover;
-            display: table;
-            width: 100%;
-            box-shadow: inset 0 0 100px #000;
+.navbar a span{
+    font-family: achilles;
+    text-transform: uppercase;
+    font-size: 30px;
+}
 
-            -webkit-animation: coverDescend 1s ease-out forwards;
-            -moz-animation: coverDescend 1s ease-out forwards;
-            -o-animation: coverDescend 1s ease-out forwards;
-            animation: coverDescend 1s ease-out forwards;
+@keyframes coverDescendFull {
+    from { padding: 0; }
+    to   { padding: 35% 0 0 0; }
+}
 
-        }
+.cover {
+    background: url('/img/cover.jpg') top left no-repeat;
+    background-size: cover;
+    display: table;
+    width: 100%;
+    box-shadow: inset 0 0 100px #000;
+    
+    -webkit-animation: coverDescendFull 1s ease-out forwards;
+    -moz-animation: coverDescendFull 1s ease-out forwards;
+    -o-animation: coverDescendFull 1s ease-out forwards;
+    animation: coverDescendFull 1s ease-out forwards;
 
-        .cover-text {
-            text-align: center;
-            color: white;
-            display: table-cell;
-            vertical-align: middle;
-            background: rgba(0, 0, 0, 0.5);
-        }
+}
 
-        .cover-text h1 {
-            margin: 0;
-            font-size: 70px;
-            letter-spacing: -3px;
-        }
+.cover-text {
+    text-align: center;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    background: rgba(0, 0, 0, 0.5);
+}
 
-        .bounce {
-            -moz-animation: bounce 3s infinite;
-            -webkit-animation: bounce 3s infinite;
-            animation: bounce 3s infinite;
-        }
-        @-moz-keyframes bounce {
-          0%, 20%, 50%, 80%, 100% {
-            -moz-transform: translateY(0);
-            transform: translateY(0);
-          }
-          40% {
-            -moz-transform: translateY(-30px);
-            transform: translateY(-30px);
-          }
-          60% {
-            -moz-transform: translateY(-15px);
-            transform: translateY(-15px);
-          }
-        }
-        @-webkit-keyframes bounce {
-          0%, 20%, 50%, 80%, 100% {
-            -webkit-transform: translateY(0);
-            transform: translateY(0);
-          }
-          40% {
-            -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
-          }
-          60% {
-            -webkit-transform: translateY(-15px);
-            transform: translateY(-15px);
-          }
-        }
-        @keyframes bounce {
-          0%, 20%, 50%, 80%, 100% {
-            -moz-transform: translateY(0);
-            -ms-transform: translateY(0);
-            -webkit-transform: translateY(0);
-            transform: translateY(0);
-          }
-          40% {
-            -moz-transform: translateY(-30px);
-            -ms-transform: translateY(-30px);
-            -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
-          }
-          60% {
-            -moz-transform: translateY(-15px);
-            -ms-transform: translateY(-15px);
-            -webkit-transform: translateY(-15px);
-            transform: translateY(-15px);
-          }
-        }
+.cover-text h1 {
+    margin: 0;
+    font-size: 70px;
+    letter-spacing: -3px;
+}
+
+.bounce {
+	-moz-animation: bounce 3s infinite;
+	-webkit-animation: bounce 3s infinite;
+	animation: bounce 3s infinite;
+}
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+#como-funciona {
+    background: rgba(247, 247, 247, 1);
+    padding-top: 5%;
+}
+
+#como-funciona h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 20px 60px;
+}
+
+.colagem {
+    height: 100%;
+    width: 100%;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.img-quadrada {
+    width: 100%;
+    padding-bottom: 100%;
+    background-size: cover;
+    background-position: top left;
+    position: relative;
+}
+
+.img-quadrada:hover {
+    box-shadow: inset 0 0 100px #000;
+}
+
+.dark-div {
+    position: absolute;
+    top: 75%;
+    left: 30%;
+    padding: 2% 5%;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    vertical-align: middle;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.dark-div h5{
+    text-align: center;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.texto-explicativo {
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    vertical-align:middle;
+    padding-top:30%;
+    position:relative;
+}
+
+.texto-explicativo h3 {
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: -3px;
+    margin: 0;
+    line-height: 95%
+}
+
+.texto-explicativo p {
+    font-weight: lighter;
+}
+
+
+/* Media Queries */
+
+@media only screen and ( max-width : 1000px ) {
+    
+    @keyframes coverDescendMedium {
+    from { padding: 0; }
+    to   { padding: 55% 0 0 0; }
+    }
+    
+    .cover {
+    -webkit-animation: coverDescendMedium 1s ease-out forwards;
+    -moz-animation: coverDescendMedium 1s ease-out forwards;
+    -o-animation: coverDescendMedium 1s ease-out forwards;
+    animation: coverDescendMedium 1s ease-out forwards;
+    }    
+    
+    .texto-explicativo h3 {
+        font-size: 40px;
+    }
+    
+    .dark-div {
+        left: 20%;
+    }
+    
+@media only screen and ( max-width : 765px ) {
+    
+    
+    
+
+@media only screen and ( max-width : 740px ) {
+    
+    @keyframes coverDescendMini {
+    from { padding: 0; }
+    to   { padding: 75% 0 0 0; }
+    }
+    
+    .cover {
+    -webkit-animation: coverDescendMini 1s ease-out forwards;
+    -moz-animation: coverDescendMini 1s ease-out forwards;
+    -o-animation: coverDescendMini 1s ease-out forwards;
+    animation: coverDescendMini 1s ease-out forwards;
+    }
+    
+    .cover h1 {
+        font-size: 40px;
+    }
+    section {
+        padding: 20px;
+    }
+    
+    .texto-explicativo {
+        padding-top: 10%;
+    }
+    
+}
         
     </style>
 
@@ -148,7 +290,7 @@
         <span class="navbar-toggler-icon"></span>
         </button>        
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto">                
                 <li class="nav-item">
                     <a class="nav-link" href="#">Como funciona</a>
                 </li>
@@ -173,7 +315,7 @@
      <div class="cover">
         <div class="cover-text">
             <h1>Nosso <em>Estilo</em> é feito por você</h1>
-            <p class="lead">Você conta um pouco sobre você e seremos os melhores até ficarmos a sua cara.</p>
+            <p class="lead">Conte pra nós um pouco sobre você e seremos os melhores até ficarmos a sua cara.</p>
             <br>
             <br>
             <div class="bounce">
@@ -182,6 +324,60 @@
             </div>
         </div>         
     </div>
+    
+    <section id="como-funciona">
+        
+        <div class="parentDiv">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="texto-explicativo">
+                        <h4>Como funciona?</h4>
+                        <br>
+                        <h3>Primeiro você escolhe seu estilo</h3>
+                        <br>
+                        <p>Clique nas imagens para ver exemplos</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="colagem">
+                        <div class="row">
+                            <div class="col-md-6 nopadding">
+                                <div class="img-quadrada" style="background-image: url('casual.jpg')">
+                                </div>
+                                <div class="dark-div">
+                                    <h5>casual</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-6 nopadding">
+                                <div class="img-quadrada" style="background-image: url('cinema.jpg')">
+                                </div>
+                                <div class="dark-div">
+                                    <h5>cinema</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 nopadding">
+                                <div class="img-quadrada" style="background-image: url('geek.jpg')">
+                                </div>
+                                <div class="dark-div">
+                                    <h5>geek</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-6 nopadding">
+                                <div class="img-quadrada" style="background-image: url('humor.jpg')">
+                                </div>
+                                <div class="dark-div">
+                                    <h5>humor</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>   
     
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/core.js"></script>
