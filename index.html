@@ -41,7 +41,7 @@ body,
 
 @font-face {
     font-family: achilles;
-    src: url(/lib/fonts/achv2.ttf);
+    src: url(achv2.ttf);
 }
 
 .navbar a span{
@@ -56,7 +56,7 @@ body,
 }
 
 .cover {
-    background: url('/img/cover.jpg') top left no-repeat;
+    background: url('cover.jpg') top left no-repeat;
     background-size: cover;
     display: table;
     width: 100%;
@@ -214,7 +214,6 @@ body,
     font-weight: lighter;
 }
 
-
 /* Media Queries */
 
 @media only screen and ( max-width : 1000px ) {
@@ -241,7 +240,13 @@ body,
     
 @media only screen and ( max-width : 765px ) {
     
+    .dark-div {
+        left: 35%;
+    }
     
+    .texto-explicativo {
+        padding-top: 10%;
+    }
     
 
 @media only screen and ( max-width : 740px ) {
@@ -265,12 +270,7 @@ body,
         padding: 20px;
     }
     
-    .texto-explicativo {
-        padding-top: 10%;
-    }
-    
-}
-        
+}        
     </style>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
