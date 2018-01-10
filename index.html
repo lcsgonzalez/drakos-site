@@ -212,8 +212,67 @@ body,
 
 .texto-explicativo p {
     font-weight: lighter;
+}#master-div-cff {
+    background: url('drone-entrega.jpg') center no-repeat;
+    background-size: cover;
+    display: table;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 100px #000;
 }
 
+#texto-cff {
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    background: rgba(0, 0, 0, 0.5);
+    padding-top: 35%;
+}
+
+#texto-cff h1 {
+    margin: 0;
+    font-size: 55px;
+    letter-spacing: -1px;
+    line-height: 95%;
+    font-weight: bold;
+    padding: 0 4%;
+}
+
+#texto-cff p {
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: -1px;
+    line-height: 95%;
+    font-weight: lighter;
+    padding: 4% 4%;
+}
+
+.form {
+    padding: 5% 12% 0 0;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.form h3 {
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: -1px;
+    line-height: 95%;
+}
+
+.form h4 {
+    margin: 0;
+    font-size: 25px;
+    letter-spacing: -1px;
+    line-height: 95%;
+    font-weight: lighter;
+}
+
+.form form{
+    padding: 10%;
+}
 /* Media Queries */
 
 @media only screen and ( max-width : 1000px ) {
@@ -238,6 +297,26 @@ body,
         left: 20%;
     }
     
+    #texto-cff h1 {
+        font-size: 45px;
+    }
+    
+    #texto-cff p {
+        font-size: 30px;
+    }
+    
+    .form h3 {
+        font-size: 30px;
+    }
+    
+    .form h4 {
+        font-size: 22px;
+    }
+    
+    .form form{
+        padding: 10% 0;
+    }
+    
 @media only screen and ( max-width : 765px ) {
     
     .dark-div {
@@ -248,7 +327,6 @@ body,
         padding-top: 10%;
     }
     
-
 @media only screen and ( max-width : 740px ) {
     
     @keyframes coverDescendMini {
@@ -266,11 +344,9 @@ body,
     .cover h1 {
         font-size: 40px;
     }
-    section {
-        padding: 20px;
-    }
     
-}        
+}
+    
     </style>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -283,19 +359,19 @@ body,
 <body>
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-trans navbar-dark">
-        <a class="navbar-brand" href="index.html">
-            <img src="drakos_logo_dragao_branco.png" width="60" height="40" class="d-inline-block align-top" alt="drakos logo"> <span>Drakos</span>
+        <a class="navbar-brand" href="drakos.html">
+            <img src="/img/drakos_logo_dragao_branco.png" width="60" height="40" class="d-inline-block align-top" alt="drakos logo"> <span>Drakos</span>
         </a>        
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>        
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">                
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Como funciona</a>
-                </li>
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="#">Planos<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Como funciona</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Sobre nós</a>
@@ -377,7 +453,39 @@ body,
             </div>
         </div>
         
-    </section>   
+    </section>
+    
+    <section id="como-funciona-final">
+    
+        <div id="master-div-cff">
+            <div id="texto-cff">
+                <h1>Depois é só esperar que vamos escolher a melhor camiseta e entregar na sua casa!</h1>
+                <br>
+                <br>
+                <p>Infelizmente ainda não com drones...</p>
+            </div>
+        </div>
+        
+    </section>
+    
+    <section id="tenho interesse">
+        
+        <div class="form">
+            <div class="row no-gutters">
+                <div class="col-md-8 offset-2">
+                    <h3>Tem interesse em receber incríveis camisetas na sua casa todos os meses?</h3>
+                    <br>
+                    <h4>Envie seu email. Assim que começarmos você será um dos primeiros a saber!</h4>
+                    <form>
+                        <input type="email"  class="form-control" id="email" placeholder="email@exemplo.com.br">
+                        <br>
+                        <button class="btn btn-success" type="button">Seja um dos primeiros!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </section>
     
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/core.js"></script>
